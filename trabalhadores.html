@@ -27,17 +27,35 @@
 </header>
 
 <main class="main">
-    <div class="col80">
+    <div class="col80f">
         <h2 class="center">Trabalhadores</h2>
         <article>
             <div class="containerImg center">
-                <img class="image-shadow" alt="Contratar pessoas" src="img/workers.jpg">
+                <img class="image-shadow" alt="Contratar pessoas" src="./img/workers.jpg">
             </div>
-            <p>Aqui nessa página você irá preencher com seus dados básicos e anexar o seu currículo. BOA SORTE!!!</p>
+            <p class="center">Aqui nessa página você irá preencher com seus dados básicos e anexar o seu currículo. BOA SORTE!!!</p>
+            <form action="./src/processar_formulario.php" method="post" enctype="multipart/form-data">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
 
-            <p>Nós da <strong>NEIGHBOR</strong> somos uma equipe apaixonada por conectar talentos e oportunidades. Há mais de uma década, temos sido líderes no mercado de Recursos Humanos, fornecendo soluções inovadoras e personalizadas para empresas e profissionais em busca do sucesso. Nossa missão é simples, mas poderosa: encontrar as pessoas certas para os lugares certos.</p>
-            <p>O que nos diferencia é o nosso compromisso inabalável com a excelência e o cuidado com nossos clientes. Acreditamos que, por trás de cada grande empresa, existem indivíduos talentosos e dedicados. É por isso que nos esforçamos para entender as necessidades únicas de cada organização e encontrar candidatos que não apenas possuam as habilidades técnicas necessárias, mas também se encaixem perfeitamente na cultura empresarial. Do mesmo modo, valorizamos a jornada dos profissionais em busca de novas oportunidades e os acompanhamos em cada passo do processo, oferecendo suporte e orientação.</p>
-            <p>Nossa equipe é formada por especialistas em Recursos Humanos, psicólogos organizacionais e consultores de carreira altamente qualificados, todos apaixonados por transformar vidas e negócios por meio de uma abordagem humana e centrada nas pessoas. Se você está procurando recrutar os melhores talentos ou em busca de um novo desafio profissional, estamos prontos para ajudar. Junte-se a nós em nossa missão de construir equipes de sucesso e impulsionar o crescimento organizacional, enquanto abraçamos o potencial ilimitado que as pessoas trazem para o mundo corporativo.</p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required><br><br>
+
+                <label for="bairro">Bairro:</label>
+                <input type="text" id="bairro" name="bairro" required><br><br>
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+
+                <label for="curriculo">Currículo (PDF):</label>
+                <input type="file" id="curriculo" name="curriculo" accept=".pdf" required><br><br>
+
+                <input type="submit" value="Enviar">
+
+            </form>
 
         </article>
     </div>
