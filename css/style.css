@@ -44,9 +44,10 @@ aside {
     box-sizing: border-box;
 }
 
+/*Sombra nas imagens desta classe*/
 .image-shadow{
-    -webkit-filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%));
-    filter: drop-shadow(0px 0px 20px rgba(0 0 0 / 90%));
+    -webkit-filter: drop-shadow(0px 0px 5px rgba(0 0 0 / 90%));
+    filter: drop-shadow(0px 0px 5px rgba(0 0 0 / 90%));
 }
 
 .header {
