@@ -132,13 +132,11 @@ nav ul li a:hover {
 .escritorio {
     /*background-color: rgba(245, 245, 245, 0.623);*/
     padding: 10px;
-    max-width: 40%;
 }
 
 .funcionario {
     /*background-color: rgba(245, 245, 245, 0.623);*/
     padding: 10px;
-    max-width: 40%;
 }
 
 .barralateral {
@@ -186,6 +184,12 @@ aside {
     height: 45px;
  }
 
-.quemsomos {
+.col80 {
     max-width: 80%;
+}
+.col20 {
+    max-width: 20%;
+}
+.col40{
+    max-width: 40%;
 }
